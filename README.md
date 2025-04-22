@@ -1,6 +1,6 @@
 # nemigzare
 
-![App window](screenshot.jpg?raw=true)
+![App window](Assets/sample.png?raw=true)
 
 ## About
 
@@ -10,7 +10,7 @@ Bouncing DVD logo screen saver in form of a web app.
 
 Swift of all things, and on Linux too?!
 
-> DISCLAIMER: SwiftUI is not available on Linux, this code is using Vapor (Apple WebKit)
+> DISCLAIMER: SwiftUI is not available on Linux, this code is using Vapor (Apple WebKit framework)
 
 ![Reason](Assets/why.png?raw=true)
 
@@ -31,6 +31,12 @@ paru -S swift-bin
 ```
 
 ## Build and run
+
+Install the dependencies:
+
+```sh
+swift package resolve
+```
 
 Serve the app:
 
