@@ -14,8 +14,8 @@ let html = """
         }
         #dvd {
             position: absolute;
-            width: 100px;
-            height: 50px;
+            width:  200px;
+            height: 200px;
             filter: brightness(0) invert(1);
         }
     </style>
