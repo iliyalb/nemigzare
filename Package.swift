@@ -5,10 +5,16 @@ import PackageDescription
 
 let package = Package(
     name: "nemigzare",
+    dependencies: [
+        .package(url: "https://github.com/vapor/vapor.git", from: "4.92.1")
+    ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
-            name: "nemigzare"),
+            name: "nemigzare",
+            dependencies: [
+                .product(name: "Vapor", package: "vapor")
+            ],
+            resources: [.copy("../Assets")]
+        )
     ]
 )
